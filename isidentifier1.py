@@ -1,19 +1,19 @@
-#variable should begin with alphabet or underscore.
+# variable should begin with alphabet or underscore.
 abc=123
 print('abc'.isidentifier())     #true
 
 _=456
 print('_'.isidentifier())       #true
 
-#identifier can be alphanumerical but numbers should not be at the beggining
+# identifier can be alphanumerical but numbers should not be at the beggining
 abc1234=5678
 print('abc1234'.isidentifier())     #true
 
 a1b2c3=123
 print('a1b2c3'.isidentifier())      #true
 
-#1a2b3c=123
-#print('1a2b3c'.isidentifier())    #false
+# 1a2b3c=123
+# print('1a2b3c'.isidentifier())    #false
 
 # special character are not allowed in variable
 
