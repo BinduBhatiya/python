@@ -185,6 +185,12 @@ print(str.zfill(15))                                     # 00Hello Python.
 str = "    Hello Python.   "
 print(str.strip())                                       # Hello Python.
 
+# it is show in which index character is store.
+# rindex()
+
+str = "hello python"
+print(str.rindex('o',2,11))                                # 10
+
 
 
 
