@@ -101,6 +101,12 @@ print(s1[0:9:4])                            # rb
 
 print(s1[0::11])                            # ry
 
+#print(s1[0:0:0])                           # Error
+
+print(s1[0:0:])                             # blank
+
+#print(s1[0:0:0:])                          # syntax Error
+
 
 # negative slicing with three argument
 s = 'python world'

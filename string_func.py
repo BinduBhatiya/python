@@ -190,7 +190,13 @@ print(str.strip())                                       # Hello Python.
 
 str = "hello python"
 print(str.rindex('o',2,11))                                # 10
+print(str.find(" "))                                       # 5
+print("find occurance",str.find("o"))                      # 4
 
+
+# note :
+# difference between index and find is if no value find in index then it will return "value error". whereas find return "-1" as an output.
+# difference between index and rindex is in index define first occurance whereas rindex define last occurance.
 
 
 
