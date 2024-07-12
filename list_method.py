@@ -111,11 +111,12 @@ print(names)                                                    # ['Harry', 'Sar
 
 # list comprehension :
 # accepts items with the small letter “o” in the new list
+
 names = ["Milo", "Sarah", "Bruno", "Anastasia", "Rosa"]
 namesWith_O = [item for item in names if "o" in item]
-print(namesWith_O)
+print(namesWith_O)                                              # ['Milo', 'Bruno', 'Rosa']
 
 # accepts items which have more than 4 letters
 names = ["Milo", "Sarah", "Bruno", "Anastasia", "Rosa"]
 namesWith_O = [item for item in names if (len(item) > 4)]
-print(namesWith_O)
+print(namesWith_O)                                              # ['Sarah', 'Bruno', 'Anastasia']
