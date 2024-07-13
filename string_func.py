@@ -23,7 +23,7 @@ print(str.center(20,"*"))                            # *******hello********
 str = "hello"
 print(str.count('l'))                                # 2 
 
-# find which index word is made
+# find in which index, word is made
 # find()
 
 str = "hello python"
