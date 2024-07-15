@@ -199,7 +199,107 @@ print("find occurance",str.find("o"))                      # 4
 # difference between index and rindex is in index define first occurance whereas rindex define last occurance.
 
 
+# split() : it is used to separate the string at the specified separetor. by default it will split at white space, and return type of 'split()' will be list, and we can have number of splits.
+# syntax : var_nm.split(separator,max_split)
 
+s = 'hello world good morning'
+print(s.split())                                            # ['hello', 'world', 'good', 'morning']
+
+s1 = 'python is programming language.'
+print(s1.split('a'))                                        # ['python is progr', 'mming l', 'ngu', 'ge.']
+
+s2 = 'life is full of struggle.'
+print(s2.split('l'))                                        # ['', 'ife is fu', '', ' of strugg', 'e.']
+
+s3 = 'I am lucky man'
+print(s3.split(' ',2))                                      # ['I', 'am', 'lucky man']
+print(s3.split(' ',1))                                      # ['I', 'am lucky man']
+                                                            
+s4 = 'python world'
+print(s4[::-1].split()[::-1])                               # ['nohtyp', 'dlrow']
+print(s4[::-1].split())                                     # ['dlrow', 'nohtyp']
+
+s4 = 'python world'
+res1 = s4[::-1]
+print(res1)                                                 # dlrow nohtyp
+print(res1.split())                                         # ['dlrow', 'nohtyp']
+
+s4 = 'python world'
+print(s4.split(' ',-1))                                     # ['python', 'world']
+print(s4.split(' ',-2))                                     # ['python', 'world']
+#print(s4.split(' ',s4[::-1]))                               # TypeError: 'str' object cannot be interpreted as an integer.
+
+
+
+# rsplit() : 
+# it will split at specified separator and it splits from trailing end,by default it split at space, and return type of rsplit() is list.
+
+s = 'hello world good morning'
+print(s.rsplit())                                           # ['hello', 'world', 'good', 'morning']
+print(s.rsplit('o'))                                        # ['hell', ' w', 'rld g', '', 'd m', 'rning']
+print(s.rsplit('o',2))                                      # ['hello world go', 'd m', 'rning']
+
+
+
+# join() : 
+# it joins the iterables at the specified joining parameter.
+# syntax : 'joining_parameter'.join(iterables)
+
+s = 'hello python'
+print('_'.join(s))                                          # h_e_l_l_o_ _p_y_t_h_o_n
+
+s1 = 'python is a programming language.'
+print('-'.join(s1))                                         # p-y-t-h-o-n- -i-s- -a- -p-r-o-g-r-a-m-m-i-n-g- -l-a-n-g-u-a-g-e-.
+
+s2 = 'today is monday'
+print('_'.join(s2.split()))                                 # today_is_monday
+
+
+
+
+# replace() :
+# it replaces the string from older value to newer value.
+# syntax : var_nm.replace(old_value,new_value,count)
+
+s = 'hello world'
+print(s.replace(' ','@'))                                   # hello@world
+
+s = 'python is programming language'
+print(s.replace(' ','_',2))                                 # python_is_programming language
+
+res = s.replace(' ','_',2)
+print(res.replace(' ','@'))                                 # python_is_programming@language
+
+s1 = 'today is monday'
+print(s1.replace('monday','hectic-day'))                    # today is hectic-day
+
+
+
+# strip() :
+# it strip the specified characters from both leading and trailing ends
+# by default it strips at 'space'
+# syntax : var_name.strip(chars)
+
+s = '@#$%hello world^%$#'
+print(s.strip('@#$%^'))                                     # hello world
+
+
+
+# lstrip() :
+# it strip only the leading characters
+# syntax : var_name.lstrip(chars)
+
+s = '@#$%hello world^%$#'
+print(s.lstrip('@#$%'))                                     # hello world^%$#
+
+
+
+# rstrip() :
+# it strip only the traling characters
+# syntax : var_name.rstrip(chars)
+
+s = '@#$%hello world^%$#'
+print(s.rstrip('^@#$%'))                                     # @#$%hello world
 
 
 
