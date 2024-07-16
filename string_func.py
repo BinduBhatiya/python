@@ -227,8 +227,10 @@ print(res1.split())                                         # ['dlrow', 'nohtyp'
 s4 = 'python world'
 print(s4.split(' ',-1))                                     # ['python', 'world']
 print(s4.split(' ',-2))                                     # ['python', 'world']
-#print(s4.split(' ',s4[::-1]))                               # TypeError: 'str' object cannot be interpreted as an integer.
+#print(s4.split(' ',s4[::-1]))                              # TypeError: 'str' object cannot be interpreted as an integer.
 
+s4 = 'python-world-is-a-programming language'
+print('split :---> ',s4.split('-',-1))                      # ['python', 'world', 'is', 'a', 'programming language']
 
 
 # rsplit() : 
@@ -300,6 +302,8 @@ print(s.lstrip('@#$%'))                                     # hello world^%$#
 
 s = '@#$%hello world^%$#'
 print(s.rstrip('^@#$%'))                                     # @#$%hello world
+
+
 
 
 
