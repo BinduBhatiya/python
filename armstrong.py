@@ -3,13 +3,13 @@
 # for ex: (1*1*1 + 5*5*5 + 3*3*3) = 153
 
 num = int(input('enter the number : '))
-s = 0
+sum = 0
 c = num
 while(num > 0):
-    r = num % 10
-    s = (r*r*r) + s
+    rem = num % 10
+    sum = (rem*rem*rem) + sum
     num = num // 10
-if c == s:
+if c == sum:
     print(c,' is armstrong number.')
 else:
     print(c,' is not armstrong number.')
