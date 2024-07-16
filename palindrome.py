@@ -2,14 +2,14 @@
 # reverce number of actual value both are same it is palindrome number.
 
 
-n = int(input('enter the number : '))
-s = 0
-c = n
-while(n > 0):
-    r = n % 10
-    s = s * 10 + r
-    n = n // 10
-if c == s:
+num = int(input('enter the number : '))
+sum = 0
+c = num
+while(num > 0):
+    rem = num % 10
+    sum = sum * 10 + rem
+    num = num // 10
+if c == sum:
     print(c,' is palindrome number.') 
 else:
     print(c,' is not palindrome number.') 
