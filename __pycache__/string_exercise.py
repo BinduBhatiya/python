@@ -1,7 +1,7 @@
 # EXERCISE :- 1. reverce string with the help of reverced() function.
 str1 = 'hellopython'
 rev = ''.join(reversed(str1))
-print(rev)                                          # nohtypolleh
+print(rev)                                             # nohtypolleh
 # it must use join() method. without using join() we can not print reverce string.
 
 
@@ -103,7 +103,7 @@ for i in range(0,len(str8)):
 
 
 
-# EXERCISE :- 9. iterate character of a string in reverce order.
+# EXERCISE :- 9. iterate character of a string in reverce order using for loop.
 
 str9 = 'python'
 for i in str9[::-1]:
@@ -113,4 +113,95 @@ for i in str9[::-1]:
 str9 = 'python'
 for i in reversed(range(0,len(str9))):
     print(str9[i],end=' ')                                          # n o h t y p
+
+
+
+# EXERCISE :- 10
+# isprintable() method
+# Python String isprintable() is a built-in method used for string handling. The isprintable() method returns “True” if all characters in the string are printable or the string is empty, Otherwise, It returns “False”. 
+
+str10 = 'hello python\n \tworld'
+new_str = ''
+count = 0
+for i in str10:
+    if i.isprintable()==False:
+        count+=1
+    else:
+        new_str+=i
+print(count)                                            # 2
+print(new_str)                                          # hello python world
+
+
+
+# EXERCISE :- 11
+# issspace()
+# it return true or false if isspace in the string.
+
+str11 = 'my name is \n\n\n bindu'
+count = 0
+for i in str11:
+    if i.isspace()==True:
+        count+=1
+print('space is: ',count)                                   # space is:  7
+
+
+
+# EXERCISE :- 12
+# what happen when we use join() method in non-string element.
+
+lst = [1, 2, 3]
+# result = '-'.join(lst)
+# print(result)                                   # it will raise a typeError.
+# require to convert into string.
+result = '-'.join(map(str,lst))
+print(result)                                     # 1-2-3
+
+
+# EXERCISE :- 13
+# partition()
+# how to partition in string ?
+
+url = 'https://www.python.com/index.html'
+result = url.partition('//') 
+result = result[2].partition('/')
+print(result[0])                                              # www.python.com
+print(result)                                                 # ('www.python.com', '/', 'index.html')
+
+
+# EXERCISE :- 14
+# find aascii value of character.
+
+char = 'g'
+print("Aascii value of character",char,"is: ",ord(char))       # 103
+
+
+# EXERCISE :- 15
+# find character value of given Aascii number.
+
+asc = 103
+print('character value of',asc,'is: ',chr(asc))                 # g
+
+
+# EXERCISE :- 16
+# translate()
+# it can translate 'g,e' and print that number which is not the aascii value match with the argument.
+
+translation = {103:None, 101:None}
+string = "geeks"
+print("translated string: ",string.translate(translation))          # ks
+
+
+# EXERCISE :- 17
+# rfind()
+# check the email is matched or not.
+
+email = 'userxyz.com@domain.xyz'
+last_dot_pos = email.rfind('.', 1)
+tld_string = email[last_dot_pos:]
+
+if tld_string == ".com":
+    print("Email matched")
+else:
+    print("Email not matched, tld:", tld_string)
+
 
