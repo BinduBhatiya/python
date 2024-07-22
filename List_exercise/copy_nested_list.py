@@ -7,6 +7,7 @@ Input_list = [[0, 1, 2], [3, 4, 5], [0, 1, 8]]
 
 # comprehensive method
 out_list = [ele[:] for ele in Input_list]
+# out_list = Input_list                                     # it is referance value
 
 # Printing Output
 print("Initial list is:")
@@ -41,6 +42,7 @@ print("Initial list is:")
 print(Input_list)
 print("New assigned list is")
 print(Output)
+
 
 # OUTPUT :
 '''

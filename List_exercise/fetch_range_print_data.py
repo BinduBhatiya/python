@@ -2,13 +2,13 @@
 
 # METHOD 1 (using simple for loop) :
  
-r1 = int(input("enter the first range: "))
-r2 = int(input("enter the second range: "))
+# r1 = int(input("enter the first range: "))
+# r2 = int(input("enter the second range: "))
 
-lst = []
-for i in range(r1,r2+1):
-    lst.append(i)
-print(lst)
+# lst = []
+# for i in range(r1,r2+1):
+#     lst.append(i)
+# print(lst)
 
 # OUTPUT :
 '''
@@ -21,7 +21,8 @@ print(lst)
 # METHOD 2 (using map,Lambda function) :
 
 def fetch_range(r1,r2):
-    return list(map(lambda i: i,range(r1,r2+1)))
+    #return list(map(lambda i: i,range(r1,r2+1)))
+    return list(map(lambda i: i, range(r1,r2+1)))
 print(fetch_range(1,5))                                             # [1, 2, 3, 4, 5]
 
 

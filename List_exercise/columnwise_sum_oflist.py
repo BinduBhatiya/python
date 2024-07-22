@@ -58,7 +58,7 @@ print(column_sum(lst))
 # [12, 15, 18]
 
 
-# METHOD 2 (using map, lambda function):
+# METHOD 2 (using map, zip function):
 def column_sum(lst):
     return list(map(sum, zip(*lst)))
 lst = [[1,2,3], [4,5,6], [7,8,9]]

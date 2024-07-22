@@ -11,10 +11,10 @@ print(res)
     hello python world
 '''
 
-# METHOD 2 (using join method) :
+# METHOD 2 (using list comprehension method) :
 
 lst = ['hello','python','world']
-res = ' '.join(str(item) for item in lst)  
+res = ' '.join(item for item in lst)  
 print(res)
 
 # OUTPUT :

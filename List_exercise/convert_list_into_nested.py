@@ -4,7 +4,7 @@
 
 Input = ['Geeeks, Forgeeks', '65.7492, 62.5405',
          'Geeks, 123', '555.7492, 152.5406']
-nes = [elem.split(', ') for elem in Input]
+nes = [elem.split(',') for elem in Input]
 print(nes)
 
 # OUTPUT :
@@ -29,10 +29,7 @@ print(nes)
 
 Input = ['Geeeks, Forgeeks', '65.7492, 62.5405',
          'Geeks, 123', '555.7492, 152.5406']
-nes = [elem.split(', ') for elem in Input]
-print(nes)
+nes = Input.split(', ')
+print(nes)                                      
 
-# OUTPUT :
-'''
-[['Geeeks', 'Forgeeks'], ['65.7492', '62.5405'], ['Geeks', '123'], ['555.7492', '152.5406']]
-'''
+# AttributeError: 'list' object has no attribute 'split'
