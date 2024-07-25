@@ -39,3 +39,26 @@ y ->  Hello
 z ->  Python World 50
 '''
 
+
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------
+# UNPACK NESTED TUPLE
+
+test_list = [(4, (5, 'Gfg')), (7, (8, 6))]
+print("The original list is : " + str(test_list))
+
+# Unpacking nested tuples using nested loops
+res = []
+for z, x in test_list:
+	temp = [z]
+	for item in x:
+		temp.append(item)
+	res.append(temp)
+	
+print("The unpacked nested tuple list is : " + str(res))
+
+# OUTPUT :
+'''
+The original list is : [(4, (5, 'Gfg')), (7, (8, 6))]
+The unpacked nested tuple list is : [[4, 5, 'Gfg'], [7, 8, 6]]
+'''
+
