@@ -81,6 +81,13 @@ print(cars)                                                     # ['Tesla', 'bug
 num = [7,9,3,4,1,5,0,3,5,1]
 print(num.index(3))                                             # 2
 
+# count()
+# count is used to count the number of string in list.
+
+num = [7,9,3,4,1,5,0,3,5,1]
+print(num.count(3))
+
+
 # copy()
 # it is used to copy the list.
 
