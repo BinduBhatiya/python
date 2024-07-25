@@ -40,6 +40,19 @@ print('copied list is: ',copy_lst,id(copy_lst))                 # copied list is
 import copy
 org_lst = [[1,2,3],4,5]
 copy_lst = copy.copy(org_lst)
-org_lst[3].append(7)
+#org_lst[3].append(7)
 print('original list is: ',org_lst,id(org_lst))                 # original list is:  [[1, 2, 3, 5], 4, 5,7] -> 2270315151488
 print('copied list is: ',copy_lst,id(copy_lst))                 # copied list is:  [[1, 2, 3, 5], 4, 5] -> 2270315317504
+
+
+
+# EXERCISE 6(using append):
+original = [1, 2, 3]
+list_with_reference = []
+
+list_with_reference.append(original)
+
+original.append(4)
+
+print(list_with_reference)  # Output: [[1, 2, 3, 4]]
+print(original)             # Output: [1, 2, 3, 4]
