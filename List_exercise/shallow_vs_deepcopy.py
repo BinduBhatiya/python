@@ -5,8 +5,9 @@ import copy
 org_lst = [[1,2,3],4,5]
 copy_lst = copy.copy(org_lst)
 org_lst[0][2] = 6
-print('original list is: ',org_lst,id(org_lst))                 # original list is:  [[1, 2, 6], 4, 5] -> 1975077174912
-print('copied list is: ',copy_lst,id(copy_lst))                  # copied list is:  [[1, 2, 6], 4, 5] -> 1975077174144
+copy_lst[0][1] = 5
+print('original list is: ',org_lst,id(org_lst))                 # original list is:  [[1, 5, 6], 4, 5] -> 1975077174912
+print('copied list is: ',copy_lst,id(copy_lst))                  # copied list is:  [[1, 5, 6], 4, 5] -> 1975077174144
 
 
 # EXERCISE 2(using without import 'copy'):
@@ -48,11 +49,12 @@ print('copied list is: ',copy_lst,id(copy_lst))                 # copied list is
 
 # EXERCISE 6(using append):
 original = [1, 2, 3]
-list_with_reference = []
+copy_lst = []
 
-list_with_reference.append(original)
-
+copy_lst.append(original)
 original.append(4)
+original.append(5)
+copy_lst.append(6)
 
-print(list_with_reference)  # Output: [[1, 2, 3, 4]]
-print(original)             # Output: [1, 2, 3, 4]
+print(copy_lst)             # Output: [[1, 2, 3, 4, 5],6]
+print(original)             # Output: [1, 2, 3, 4, 5]
