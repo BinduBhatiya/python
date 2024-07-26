@@ -92,8 +92,11 @@ print(set2.issubset(set1))                               # true
 
 set1 = {'abc',11,'xyz',12,'pqr'}
 set2 = {'krishna','abc','xyz','ganesh'}
-set3 = set1.union(set2)
-print(set3)                                         # {11, 12, 'krishna', 'abc', 'pqr', 'xyz', 'ganesh'}
+set3 = set1.union(set2)         # it is support in "union()" only.
+print(set3)
+
+set1.union(set2)
+print(set1)                                         # {11, 12, 'krishna', 'abc', 'pqr', 'xyz', 'ganesh'}
 
 set1 = {'abc',11,'xyz',12,'pqr'}
 set2 = {'krishna','abc','xyz','ganesh'}
