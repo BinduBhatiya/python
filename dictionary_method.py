@@ -83,3 +83,42 @@ print(info)                                             # {'name': 'krishna', 'e
 # del info
 # print(info)                                           # NameError: name 'info' is not defined
 
+
+# setdefault()
+# This method is used to retrieve the value of a key if it is present; if the key is not present, it inserts the key with a specified default value.
+
+my_dict = {'apple': 1, 'banana': 2}
+
+apple_value = my_dict.setdefault('apple', 10)
+print('Apple:', apple_value)  # Output: Apple: 1
+
+cherry_value = my_dict.setdefault('cherry', 5)
+print('Cherry:', cherry_value)  # Output: Cherry: 5
+
+print('Updated Dictionary:', my_dict)  
+# Output: Updated Dictionary: {'apple': 1, 'banana': 2, 'cherry': 5}
+
+
+# has_key()
+# Here's how you can check 'if' a key exists in a dictionary using the in keyword:
+
+my_dict = {'apple': 1, 'banana': 2, 'cherry': 3}
+
+# Check if 'banana' is a key in the dictionary
+if 'banana' in my_dict:
+    print('Banana is present in the dictionary')
+else:
+    print('Banana is not present in the dictionary')
+
+# Check if 'orange' is a key in the dictionary
+if 'orange' in my_dict:
+    print('Orange is present in the dictionary')
+else:
+    print('Orange is not present in the dictionary')
+
+
+# output :
+'''
+    Banana is present in the dictionary
+    Orange is not present in the dictionary
+'''
