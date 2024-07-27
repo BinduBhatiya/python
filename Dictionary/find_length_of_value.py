@@ -2,11 +2,11 @@
 
 # EXERCISE 1:-
 # USING SIMPLE FOR LOOP :
-# dic = {1:'python', 2:'is', 3:'best'}
-# lst = {}
-# for val in dic.values():
-#     lst[val] = len(val)
-# print(lst) 
+dic = {1:'python', 2:'is', 3:'best'}
+lst = {}
+for val in dic.values():
+    lst[val] = len(val)
+print(lst) 
 
 
 # {'python': 6, 'is': 2, 'best': 4}
@@ -15,9 +15,9 @@
 
 # EXERCISE 2:-
 # USING DICTIONARY COMPREHENSION :
-# dic = {1:'python', 2:'is', 3:'best'}
-# res = str({val: len(val) for val in dic.values()})
-# print(res) 
+dic = {1:'python', 2:'is', 3:'best'}
+res = str({val: len(val) for val in dic.values()})
+print(res) 
 
 
 # {'python': 6, 'is': 2, 'best': 4}
