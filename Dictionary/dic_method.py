@@ -122,3 +122,13 @@ else:
     Banana is present in the dictionary
     Orange is not present in the dictionary
 '''
+
+
+# setdefault()
+# This method is used to retrieve the value of a key if it is present; if the key is not present, it inserts the key with a specified default value.
+
+my_dict = {'apple': 1, 'banana': 2, 'orange':''}
+
+apple_value = my_dict.setdefault('orange', 10)
+print('orange:', apple_value)  # Output: Apple: 1
+
