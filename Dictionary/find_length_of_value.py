@@ -6,10 +6,7 @@ dic = {1:'python', 2:'is', 3:'best'}
 lst = {}
 for val in dic.values():
     lst[val] = len(val)
-print(lst) 
-
-
-# {'python': 6, 'is': 2, 'best': 4}
+print(lst)      # {'python': 6, 'is': 2, 'best': 4}
 
 
 
@@ -17,10 +14,7 @@ print(lst)
 # USING DICTIONARY COMPREHENSION :
 dic = {1:'python', 2:'is', 3:'best'}
 res = str({val: len(val) for val in dic.values()})
-print(res) 
-
-
-# {'python': 6, 'is': 2, 'best': 4}
+print(res)      # {'python': 6, 'is': 2, 'best': 4}
 
 
 
@@ -28,7 +22,6 @@ print(res)
 # USING LAMBDA,MAP :
 dic = {0:'python', 7:'is', 5:'best'}
 res = dict(map(lambda val: (val[1], len(val[1])), dic.items()))
-print(str(res)) 
+print(str(res))     # {'python': 6, 'is': 2, 'best': 4}
 
 
-# {'python': 6, 'is': 2, 'best': 4}

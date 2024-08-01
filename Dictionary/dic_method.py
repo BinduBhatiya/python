@@ -130,5 +130,5 @@ else:
 my_dict = {'apple': 1, 'banana': 2, 'orange':''}
 
 apple_value = my_dict.setdefault('orange', 10)
-print('orange:', apple_value)  # Output: Apple: 1
+print('orange:', apple_value)  # Output: orange 
 
