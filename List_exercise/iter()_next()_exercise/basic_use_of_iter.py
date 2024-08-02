@@ -1,4 +1,4 @@
-# WHAT IS THE USE OF "iter()" AND "next()" IN PYTHON
+# WHAT IS THE USE OF "iter()" AND "next()" IN PYTHON ?
 # in simple way it is used to fetch data from iterable.
 
 # EXERCISE 1:

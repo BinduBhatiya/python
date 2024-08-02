@@ -30,8 +30,9 @@ for ind, fruit in enumerate(lst,start=1):
 
 # EXERCISE 3:
 lst = ['banana', 'mango', 'apple', 'guavava', 'strawberry']
-res = list(enumerate(lst))
-print(res)
+# res = list(enumerate(lst))
+res = enumerate(lst)
+print(list(res))
 
 # OUTPUT :
 '''

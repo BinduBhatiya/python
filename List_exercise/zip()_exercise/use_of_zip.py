@@ -7,6 +7,7 @@ list2 = ['a','b','c']
 res = zip(list1,list2)
 print(list(res))                                        # [(1, 'a'), (2, 'b'), (3, 'c')]
 
+
 # EXERCISE 2:
 list1 = [1,2,3]
 list2 = ['a','b']
@@ -28,6 +29,7 @@ lst1,lst2,lst3 = zip(*lst)
 print(lst1)
 print(lst2)
 print(lst3)
+
 
 # OUTPUT :
 '''
