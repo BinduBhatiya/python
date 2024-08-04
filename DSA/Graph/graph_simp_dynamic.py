@@ -6,6 +6,7 @@ class Graph:
     def add_vertex(self, vertex):
         if vertex not in self.graph:
             self.graph[vertex] = []  # Initialize an empty list for the vertex
+            print(self.graph)
 
     def add_edge(self, vertex1, vertex2):
         # Ensure both vertices exist in the graph
