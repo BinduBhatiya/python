@@ -4,6 +4,31 @@
 info = {'name':'krishna','age':20,'eligible':True}
 print(info)                                             # {'name': 'krishna', 'age': 20, 'eligible': True}
 
+# using list of tuple
+places = dict([('ahemdabad',21), ('delhi',22)])
+print(places)                                            # {'ahemdabad': 21, 'delhi': 22}
+
+# using list of list
+places = dict([['ahemdabad','gandhinagar'], ['delhi','mumbai']])
+print(places)                                            # {'ahemdabad': 'gandhinagar', 'delhi': 'mumbai'}   
+
+# using tuple of list
+places = dict((['ahemdabad',21], ['delhi',22]))
+print(places)                                           # {'ahemdabad': 21, 'delhi': 22}
+
+# using tuple of tuple
+places = dict((('ahemdabad',21), ('delhi',22)))
+print(places)                                           # {'ahemdabad': 21, 'delhi': 22}
+
+# using tuple of tuple
+places = dict(({'ahemdabad',21}, {'delhi',22}))
+print(places)                                           # {'ahemdabad': 21, 'delhi': 22}
+
+# using key word parameter
+places = dict(a='ahamdabad', b='baroda', c='cat')
+print(places)                                           # {'a': 'ahamdabad', 'b': 'baroda', 'c': 'cat'}
+
+
 # access items :
 # access single value
 
@@ -47,6 +72,10 @@ info = {'name':'krishna','age':20,'eligible':True}
 print(info)                                             # {'name': 'krishna', 'age': 20, 'eligible': True}
 info['DOB']=2001
 print(info)                                             # {'name': 'krishna', 'age': 20, 'eligible': True, 'DOB': 2001}
+info['ID', 'fees']=1, 1000
+print(info)                                             # {'name': 'krishna', 'age': 20, 'eligible': True, 'DOB': 2001, ('ID', 'fees'): (1, 1000)}
+
+
 
 # update() method
 # The update() method updates the value of the key provided to it if the item already exists in the dictionary, else it creates a new key-value pair.
@@ -66,6 +95,10 @@ print(info.clear())                                     # None
 info = {'name':'krishna','age':20,'eligible':True}
 info.pop('eligible')
 print(info)                                             # {'name': 'krishna', 'age': 20}
+
+info = {'name':'krishna','age':20,'eligible':True}
+print(info.pop('age'))                                  # 20 it return value of key.
+
 
 # popitem()
 # popitem() remove the last key-value pair from dictionary.
