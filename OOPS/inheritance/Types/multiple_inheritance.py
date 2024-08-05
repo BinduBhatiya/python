@@ -2,19 +2,19 @@
 # in multiple inheritance we have multiple parent class and one child class. it means one child class inherit multiple parent class.
 # method 1 :
 
-# class myclass1:
-#     def myfunc1():
-#         print('this is parent class.')
-# class myclass2:
-#     def myfunc2():
-#         print('this is second parent class.')
-# class myclass3(myclass2,myclass1):
-#     def myfunc3():
-#         print('this is child class.')
-# obj = myclass3
-# obj.myfunc1()
-# obj.myfunc2()
-# obj.myfunc3()
+class myclass1:
+    def myfunc1():
+        print('this is parent class.')
+class myclass2:
+    def myfunc2():
+        print('this is second parent class.')
+class myclass3(myclass2,myclass1):
+    def myfunc3():
+        print('this is child class.')
+obj = myclass3
+obj.myfunc1()
+obj.myfunc2()
+obj.myfunc3()
 
 # output :
 '''
