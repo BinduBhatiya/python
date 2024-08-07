@@ -1,0 +1,14 @@
+1. what is exception handling ?
+    exception is nothing but runtime errors and it occurs due to incorrect implementation of logic.
+    it is a mechanism through which we can handles runtime error.
+
+    it has three blocks.
+    1. try
+    2. except
+    3. else
+
+    it also use finally block it is similar to else block.
+
+2. what is difference between else and finally ?
+    the difference between else and finally is else block always print when try block call. if try block is not call then else block also not run.
+    where as finally block is executed always. 
