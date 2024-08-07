@@ -1,0 +1,25 @@
+what is file handling ?
+    file is nothing but name of memory location on disk that store data permanantly.
+    file handling is a mechanism through which we can handle( read, write, create, append etc.) the file. 
+
+syntax :
+    file_obj = open('file_path', 'mode')
+
+--> open is a function to work with file and it takes two parameters.
+
+File  mode :
+1. read(r)
+2. write(w)
+3. append(a)
+4. both read & write(r+)
+5. binary mode(b)
+
+File operation :
+1. create
+2. read
+3. write
+4. copy
+5. delete
+6. close
+
+
