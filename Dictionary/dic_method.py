@@ -165,3 +165,16 @@ my_dict = {'apple': 1, 'banana': 2, 'orange':''}
 apple_value = my_dict.setdefault('orange', 10)
 print('orange:', apple_value)  # Output: orange 
 
+
+
+# concate string :
+
+my_dict1 = {'apple': 1, 'banana': 2, 'orange': 3}
+my_dict2 = {'cherry': 4, 'roseapple': 5, 'mango': 6}
+
+# new = my_dict1 + my_dict2
+# print(new)          # we can't cocate with using '+' sign.
+
+new = my_dict1 | my_dict2
+print("concate of dictionary: ",new)    # concate of dictionary:  {'apple': 1, 'banana': 2, 'orange': 3, 'cherry': 4, 'roseapple': 5, 'mango': 6}
+
