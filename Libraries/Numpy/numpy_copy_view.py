@@ -20,8 +20,10 @@ import numpy as np
 arr = np.array([1,2,3,4,5])
 new = arr.view()
 arr[0] = 99
+new[1] = 7
 print("original value: ",arr)
 print("copy value: ",new)
+# print("original value: ",arr)
 
 # output :
 '''

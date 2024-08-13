@@ -29,7 +29,7 @@ print(cnt)
 import numpy as np
 arr1 = np.array([1,2,3])
 arr2 = np.array([7,8,9])
-cnt = np.stack((arr1,arr2),axis=1)
+cnt = np.stack((arr1,arr2),axis=1) # axis=2 
 print(cnt)
 
 # output :

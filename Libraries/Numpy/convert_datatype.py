@@ -13,7 +13,7 @@ print(new.dtype)    # int32
 # convert integer into boolean.
 
 import numpy as np
-arr = np.array([1, 0, 3])
+arr = np.array([-1, 0, None])
 newarr = arr.astype(bool)
 print(newarr)       # [ True False  True]
 print(newarr.dtype)     # bool
