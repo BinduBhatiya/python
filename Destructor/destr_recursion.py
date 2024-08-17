@@ -1,3 +1,5 @@
+# print 1 to 5 using recursion method. and also use destructor.
+
 class RecursiveFunction:
 	def __init__(self, n):
 		self.n = n
