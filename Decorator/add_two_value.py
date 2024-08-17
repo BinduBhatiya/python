@@ -1,31 +1,34 @@
+# how to perform arithmetic operation using decorator.
+
 def decorator(func):
     def wrapper(*args,**kwargs):
         print(f"executing {func.__name__} with arguments {args,kwargs}")
         result = func(*args,**kwargs)
         print(f"{func.__name__} returned {result}")
+        # print(f"result is: {result}")
         return result
     return wrapper
 @decorator
-def add(x,y):  
+def addition(x,y):  
     return x+y
-add(10,20)
+addition(10,20)
 
 @decorator
-def mul(x,y):  
+def multiplication(x,y):  
     return x*y
-mul(10,20)  
+multiplication(10,20)  
 
 @decorator
-def div(x,y):  
+def division(x,y):  
     return x/y
-div(400,20)  
+division(400,20)  
 
 # output :
 '''
-executing add with arguments ((10, 20), {})
-add returned 30
-executing mul with arguments ((10, 20), {})
-mul returned 200
-executing div with arguments ((400, 20), {})
-div returned 20.0
+executing addition with arguments ((10, 20), {})
+addition returned 30
+executing multiplication with arguments ((10, 20), {})
+multiplication returned 200
+executing division with arguments ((400, 20), {})
+division returned 20.0
 '''
