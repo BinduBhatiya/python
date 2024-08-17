@@ -1,6 +1,7 @@
 # zipf : its defination is like common word in english has occurs and nearly 1/5 time as of the most hindi words. 
 # prameter :
-# a(), size
+# a() : distribution parameter
+# size
 
 # simple chi square distribtion
 from numpy import random
@@ -9,8 +10,8 @@ print("simple zipf value: ",arr)
 
 # output :
 '''
-simple chisquare value:   [[ 1 10  1]
-                          [ 1  2  1]]
+simple zipf value:   [[ 1 10  1]
+                      [ 1  2  1]]
 '''
 
 

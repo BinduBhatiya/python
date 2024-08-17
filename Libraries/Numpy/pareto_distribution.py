@@ -1,8 +1,9 @@
 # pareto distribution :
 # parameter :
-# a(shape) , size
+# a : shape parameter
+# size
 
-# simple chi square distribtion
+# simple pareto distribtion
 from numpy import random
 arr = random.pareto(a=5, size=(2,3))
 print("simple pareto value: ",arr)
