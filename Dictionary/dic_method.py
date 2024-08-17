@@ -20,7 +20,7 @@ print(places)                                           # {'ahemdabad': 21, 'del
 places = dict((('ahemdabad',21), ('delhi',22)))
 print(places)                                           # {'ahemdabad': 21, 'delhi': 22}
 
-# using tuple of tuple
+# using tuple of set
 places = dict(({'ahemdabad',21}, {'delhi',22}))
 print(places)                                           # {'ahemdabad': 21, 'delhi': 22}
 
@@ -162,9 +162,8 @@ else:
 
 my_dict = {'apple': 1, 'banana': 2, 'orange':''}
 
-apple_value = my_dict.setdefault('orange', 10)
-print('orange:', apple_value)  # Output: orange 
-
+orange_value = my_dict.setdefault('orange', 10)
+print('orange:', orange_value)  # Output: orange 
 
 
 # concate string :
