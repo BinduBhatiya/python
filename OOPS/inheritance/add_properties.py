@@ -7,8 +7,9 @@ class parent:
     def myfunc(self):
         print(self.firstname,self.lastname)
 class child(parent):
-    def __init__(self, fname, lname,year):
+    def __init__(self, fname, lname, year):
         super().__init__(fname,lname)
         self.finalyear = year 
 obj = child('Bindu','Bhatiya',2024)
-print(obj.finalyear)    # 2024
+obj.myfunc()
+print("add new properties final year: ",obj.finalyear)    # 2024

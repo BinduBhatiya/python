@@ -14,6 +14,7 @@ class child(parent):
         print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
 obj = child('Bindu','Bhatiya',2024)
 obj.welcome()
+# obj.myfunc()
 
 
 # output :
