@@ -5,7 +5,6 @@ def insertion(lst):
     for i in range(1, n):
         key = lst[i]
         j = i-1
-        # for j in range(0,n-1):
         while j >= 0 and lst[j] > key:
             lst[j+1] = lst[j]
             j -= 1
