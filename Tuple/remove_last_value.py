@@ -4,7 +4,7 @@
 tup = ['hello','python','world']
 n = len(tup)
 del tup[n-1]
-print(tup)
+print("method 1: ",tup)
 
 # OUTPUT :
 # ['hello', 'python']
@@ -14,7 +14,7 @@ print(tup)
 tup = ('hello','python','world')
 tup = list(tup)
 tup.pop()
-print(tup)
+print("method 2: ",tup)
 
 # OUTPUT :
 # ['hello', 'python']
@@ -24,7 +24,7 @@ print(tup)
 tup = ('hello','python','world')
 tup = list(tup)
 tup.remove(tup[-1])
-print(tup)
+print("method 3: ",tup)
 
 # OUTPUT :
 # ['hello', 'python']

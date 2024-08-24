@@ -11,7 +11,7 @@ print('access the element: ',res)
 access the element:  ['Rash', 'Varsha', 'Kil']
 '''
 
-# METHOD 2(using zip):
+# METHOD 2(using map,lambda):
 test_list = [(1, 'Rash', 21), (2, 'Varsha', 20), (3, 'Kil', 19)]
 
 n = 1

@@ -51,7 +51,7 @@ res = []
 for z, x in test_list:
 	temp = [z]
 	for item in x:
-		temp.append(item)
+		temp.append(item)		# this logic is only used for this test_list value.
 	res.append(temp)
 	
 print("The unpacked nested tuple list is : " + str(res))

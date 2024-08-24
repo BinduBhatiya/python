@@ -5,12 +5,14 @@ tup = (1,2,3,4,5)
 print('original tuple is: ',tup)
 res = list(tup)
 res.clear()
+print(res)
 clr = tuple(res)
 print('clearing tuple: ',clr)
 
 # OUTPUT :
 '''
 original tuple is:  (1, 2, 3, 4, 5)
+[]
 clearing tuple:  ()
 '''
 
