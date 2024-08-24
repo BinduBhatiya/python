@@ -10,7 +10,7 @@ print("The original list : " + str(test_list))
 # Concatenate All Records
 x = []
 for i in test_list:
-	x.extend(list(i))
+	x.extend(i)
 res = " ".join(x)
 # printing result
 print("The Concatenated elements of list is : " + res)

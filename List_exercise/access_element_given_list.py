@@ -5,7 +5,7 @@ itm_lst = [1,2,3,4,5,6,7]
 indx_lst = [3,4]
 
 result = [itm_lst[i] for i in indx_lst]
-print(result)                                               # [4, 5]
+print("using list comprehension: ",result)                  # [4, 5]
 
 # SUMMARY :
 '''
@@ -22,4 +22,4 @@ itm_lst = [1,2,3,4,5,6]
 indx_lst = [1,2]
 
 result = map(itm_lst.__getitem__, indx_lst)
-print(list(result))                                          # [2, 3]
+print("using getitem: ",list(result))                         # [2, 3]

@@ -2,7 +2,7 @@
 
 from functools import reduce
 
-num = [10,20]
+num = [10,20,30,40]
 
 res = reduce(lambda x,y: x if x > y else y, num)
 print("maximum is: ",res)                                       # maximum is:  20

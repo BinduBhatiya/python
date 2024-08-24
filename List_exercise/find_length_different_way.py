@@ -20,6 +20,17 @@ enumerate(iterable,start=0)
 # METHOD 2 (using len() function) :
 lst = [11,22,33]
 print('length of list is : ',len(lst))                              # 3 
+
+
+# METHOD 3 (using iter() function) :
+lst = [11,22,33]
+res = iter(lst)
+sum = 0
+for a in range(len(lst)):
+    next(res)
+    sum += 1
+print('length of list is : ',sum)                                   # 3                             # 3     
+
     
 
 

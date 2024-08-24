@@ -2,6 +2,7 @@
 
 # EXERCISE 1:
 lst = ['banana', 'mango', 'apple', 'guavava', 'strawberry']
+print("\nexercise 1 :\n")
 for ind, fruit in enumerate(lst):
     print(ind,'->',fruit)
 
@@ -16,6 +17,7 @@ for ind, fruit in enumerate(lst):
 
 # EXERCISE 2:
 lst = ['banana', 'mango', 'apple', 'guavava', 'strawberry']
+print("\nexercise 2 :\n")
 for ind, fruit in enumerate(lst,start=1):
     print(ind,'->',fruit)
 
@@ -30,7 +32,7 @@ for ind, fruit in enumerate(lst,start=1):
 
 # EXERCISE 3:
 lst = ['banana', 'mango', 'apple', 'guavava', 'strawberry']
-# res = list(enumerate(lst))
+print("\nexercise 3 :\n")
 res = enumerate(lst)
 print(list(res))
 

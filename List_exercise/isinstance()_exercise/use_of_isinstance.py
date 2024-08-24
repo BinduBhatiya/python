@@ -27,4 +27,5 @@ class parent:
 class derived(parent):
     pass
 obj = derived()
-print(isinstance(obj,parent))                                 # True
+print(isinstance(obj,derived))                                 # True
+print(isinstance(obj,parent))                                  # True
