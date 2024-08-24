@@ -1,6 +1,7 @@
 # UNZIP THE LIST OF TUPLE DATA
 
 # METHOD 1(using for loop):
+print("\nmethod 1 :")
 test_list = [('Akshat', 1), ('Bro', 2), ('is', 3), ('Placed', 4)]
 print('original list is : ',test_list)
 res = [[i for i,j in test_list],[j for i,j in test_list]]
@@ -13,6 +14,7 @@ unzip the the list of tuple:  [['Akshat', 'Bro', 'is', 'Placed'], [1, 2, 3, 4]]
 '''
 
 # METHOD 2(using zip(*)):
+print("\nmethod 2 :")
 test_list = [('Akshat', 1), ('Bro', 2), ('is', 3), ('Placed', 4)]
 print('original list is : ',test_list)
 res = list(zip(*test_list))
