@@ -7,10 +7,11 @@ class myclass:
     _a = 10     # protected
     __b = 20    # private
     def show(self):
-        print("a = ",self._a) 
-        print("b = ",self.__b)  
+        print("a = ",self._a)       # a =  10
+        print("b = ",self.__b)      # b =  20
 obj = myclass()
 obj.show()
-print(obj._a)
+print(obj._a)       # 10
+# print(obj.__b)      # AttributeError: 'myclass' object has no attribute '__b'
 
 
