@@ -23,4 +23,4 @@ while current_node:
 print(None)
 
 
-# 3 -> 5 -> 4 -> 11 -> None
+# 1 -> 2 -> 3 -> 4 -> 5 -> None

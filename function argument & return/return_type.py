@@ -45,7 +45,7 @@ def is_true(a):
 res = add(2, 3)
 #print("Result of add function is {}".format(res))       # Result of add function is 5
 print("Result of add function is", res)                  # Result of add function is 5
-res = is_true(2<5)
+res = is_true(2)
 print("\nResult of is_true function is {}".format(res))     # Result of is_true function is True
 
 
@@ -79,8 +79,8 @@ def fun():
     d['x']   = 20
     return d 
 
-d = fun()  
-print(d)    # {'str': 'GeeksforGeeks', 'x': 20}
+obj = fun()  
+print(obj)    # {'str': 'GeeksforGeeks', 'x': 20}
 
 
 
