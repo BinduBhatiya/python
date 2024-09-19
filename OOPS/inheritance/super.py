@@ -13,6 +13,7 @@ obj.myfunc()                # my name is  krishna
 
 
 '''
+
     Python also has a super() function that will make the child class inherit all the methods and properties from its parent.
     by using super() we do not require to pass the name of parent class.
 '''

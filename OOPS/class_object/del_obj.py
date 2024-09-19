@@ -12,7 +12,8 @@ class Person:
 p1 = Person("John", 36)
 p1.myfunc()
 del p1
-print(p1)
+p1.myfunc()
+# print(p1)
 
 # output :
 '''

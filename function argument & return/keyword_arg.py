@@ -4,9 +4,12 @@
     2. keyword argument
     3. variable_length argument
     4. required argument
+
+    it is a keyword argument.
+    
+    in which we can provide argument with key = value, this way the interpreter recognizes the argument by the 
+    parameter name. hence, the order in which argument are passed no matter.
 '''
-# it is a keyword argument.
-# in which we can provide argument with key = value, this way the interpreter recognizes the argument by the parameter name. hence, the order in which argument are passed no matter.
 
 def average(a,b):
     print('the average is: ',(a+b)/2)               # the average is:  5.0

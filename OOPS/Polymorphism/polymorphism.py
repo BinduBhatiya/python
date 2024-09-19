@@ -1,7 +1,20 @@
 # polymorphism :
-# polymorphism "poly" means "multiple" and "morphism" means "forms". it means ability to take multiple form.
-# it is devided in two way.
-# 1. method overloading   2. method overriding
+'''
+polymorphism "poly" means "multiple" and "morphism" means "forms". it means ability to take multiple form.
+    it is devided in two way.
+    1. method overloading   2. method overriding
+'''
+
+# method overriding :
+'''
+    method overriding means method name same , same parameter , same return type but different class.it have 
+    require for inheritance for call the parent-child class.
+'''
+# method overloading :
+'''
+    method overloading means method name same , same parameter , same return type but same class. it not have
+    require for inheritance.
+'''
 
 class myclass1:
     def __init__(self,brand,model):

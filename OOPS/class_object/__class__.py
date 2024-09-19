@@ -25,6 +25,7 @@ dog2.myfunc()
 '''
     dog1 is mummal
     dog2 is also a mummal
+    class name is:  myclass
 
     dog name is husky
     dog name is tommy
