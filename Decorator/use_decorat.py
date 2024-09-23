@@ -6,10 +6,10 @@
 '''
 
 
-def decorator(hello):
+def decorator(hello2):
     def wrapper():      # here, wrapper() function is not built-in but it is user-defined function.But, it is must required to define. without defining this function compiler throw typeerror.
         print("hello python.")
-        hello()
+        hello2()
         print("my name is krishna.")
     return wrapper
 @decorator

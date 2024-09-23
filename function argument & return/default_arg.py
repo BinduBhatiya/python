@@ -5,6 +5,10 @@
     3. variable_length argument
     4. required argument
 '''
+'''
+A default argument is an argument that has a default value specified in the function definition.
+If the caller does not provide a value for that argument, the default value will be used.
+'''
 # it is a default argument.
 
 def average(a=9,b=1):

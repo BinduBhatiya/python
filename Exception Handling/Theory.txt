@@ -10,5 +10,5 @@
     it also use finally block it is similar to else block.
 
 2. what is difference between else and finally ?
-    the difference between else and finally is else block always print when try block call. if try block is not call then else block also not run.
+    the difference between else and finally is, else block always print when try block call. if try block is not call then else block also not run.
     where as finally block is executed always. 
